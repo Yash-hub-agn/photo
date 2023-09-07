@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cyan-text{
+    color: var(--cyan);
+}
+.cyan-bg{
+    background-color: var(--cyan);
+}
+.nav-container{
+    width: 80%;
+}
+.logo{
+    width:max-content;
+    height: 100%;
+}
+.logo img{
+    width: 100px;
+}
+#About{
+    background-color: #1f242d;
+}
+.manoj-info{
+    top: 35%;
+    left: 10%;
+    width: 25%;
+    height: 50%;
+}
+.manoj-info h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px var(--cyan);
+}
+.manoj-info h1:nth-child(2){
+    color: var(--cyan);
+    /* color: #03a9f4; */
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0% 45%, 15% 44%,32% 50%,54% 60%,70% 61%, 84% 59%,100% 52%,100% 100%,0% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 60%, 16% 65%,34% 66%,51% 62%,67% 50%, 84% 45%,100% 46%,100% 100%,0% 100%);
+    }
+}
+.glow-shadow{
+    color: var(--cyan);
+    filter: drop-shadow( 3px 3px 2px var(--cyan) );
+}
+.Collection{
+    background-color: var(--cyan);
+    filter: drop-shadow( 5px 5px 4px var(--cyan) );
+    width: 100px;
+    height: 40px;
+}
+.image-container{
+    width: 25%;
+    height: 40%;
+    right:10%;
+    bottom: 30%;
+}
+.image-container img{
+    transform: scaleX(-1);
+}
+.backgoundEffect{
+    background-color: var(--cyan);
+    border-radius:55% 45% 53% 47% / 23% 53% 47% 77% ;
+    animation: glow 2s infinite alternate;
+    filter: drop-shadow( 5px 5px 4px var(--cyan) );
+    transform: scale(-1);
+    bottom: 0;
+}
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Initial glow effect */
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(0, 255, 255, 1); /* Stronger glow effect */
+    }
+}
+.social-icons-items{
+    filter: drop-shadow( 2px 2px 2px var(--cyan) );
+
+}
+.social-icons{
+    animation: social 1s ease-in-out forwards ;
+}
+@keyframes social {
+    0%{    
+        right: 22%;
+        top: 48%;
+    }
+}
+.social-icons-back{
+    animation: socialBack 1s ease-in-out forwards ;
+}
+@keyframes socialBack {
+    100%{    
+        right: 22%;
+        top: 48%;
+    }
+}
+.items1{
+    top: 20%;
+    right: 32%;
+}
+.items2{
+    top: 40%;
+    right: 42%;
+}
+.items3{
+    top: 60%;
+    right: 42%;
+}
+.items4{
+    top: 80%;
+    right: 32%;
+}
+/* ###############################Intro################################# */
+#Intro{
+    background-image: url(./image/about\ bg.avif);
+}
+.aboutme img{
+    width: 30%;
+    height: max-content;
+    top: 20%;
+    left: 35%;
+}
+.aboutme p {
+    width: 30%;
+    height: max-content;
+    backdrop-filter:blur(40px);
+    border: 3px solid white;
+  }
+.aboutme-p-1{
+    top: 15%;
+    left: 2%;
+}
+.aboutme-p-2{
+    top: 60%;
+    left: 2%;
+}
+.aboutme-p-3{
+    top: 15%;
+    left: 65%;
+}
+.aboutme-p-4{
+    top: 60%;
+    left: 65%;
+}
+/* ################################Collection############################## */
+#Collection{
+    background-color: #1f242d;
+}
+.left-half h2{
+    width: 60%;
+}
+.left-half p{
+    width: 60%;
+}
+.circle-container{
+    width: 280px;
+    height: 280px;
+}
+.circle-container .circle-container-img{
+    width:50%;
+    height: 50%;
+}
+.circle-container .circle-container-img:hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+}
+.collection-info{
+    top: 75%;
+    right: 10%;
+    width: 30%;
+    height: 20%;
+    backdrop-filter: blur(30px);
+}
+.collection-info::before{
+    content:'';
+    background-color: #1f242d;
+    top: 15%;
+    left: -11%;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    z-index: 2;
+    transform:rotate(45deg);
+}
